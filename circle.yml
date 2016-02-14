@@ -1,0 +1,10 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+  override:
+    - git submodule update --init --recursive
+    - bash -x .circle/prepare_docker_cache.sh instadoom

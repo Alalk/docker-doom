@@ -1,0 +1,6 @@
+dosbox:
+  build: .
+  volumes:
+    - html:/html
+  ports:
+    - 8000:8000
